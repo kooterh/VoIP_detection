@@ -8,6 +8,10 @@ mismatch_r=randperm(mismatch_num);
 train_number=datanum*train_rate;
 val_number=datanum*val_rate;
 
+if ~exist(save_path,'dir')==1
+    mkdir(save_path);
+end
+    
 if mismatch_num==0
     test_number=datanum-train_number-val_number;
 else

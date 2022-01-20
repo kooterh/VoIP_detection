@@ -89,7 +89,9 @@
 %
 %------------------------------------------------------------------------------------------------------------------------------
 How to use these codes:
-First, we download VPCID(VPCID can be download in:https://pan.baidu.com/s/1ZuNbM6Yh8RJ4PFdaWXCgFg , the extracting code is 1111) and decode all recordings to waveform.
+First, we download VPCID(VPCID can be download in:https://pan.baidu.com/s/1ZuNbM6Yh8RJ4PFdaWXCgFg , the extracting code is 1111) 
+and decode all recordings to waveform(decode the mobile phone recordings to "./VoIP_detection/VoIP_detection_data/VPCID_wav/phone" 
+and decode the voip recordings to "./VoIP_detection/VoIP_detection_data/VPCID_wav/voip").
 Second, we use matlab codes for data pre-processing and data representation.
 Third, we use python codes to train each subnet.
 Fourth, we use python codes to extract feature from each trained subnet.

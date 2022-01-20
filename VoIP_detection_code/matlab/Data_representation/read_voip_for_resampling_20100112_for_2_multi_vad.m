@@ -9,6 +9,9 @@ mismatch_r=randperm(mismatch_num);
 mismatch_r2=randperm(mismatch_num2);
 train_number=datanum*train_rate;
 val_number=datanum*val_rate;
+if ~exist(save_path,'dir')==1
+    mkdir(save_path);
+end
 parpool(50)
 parfor i=1:datanum
     disp(['datanum1 index :',num2str(i)])
